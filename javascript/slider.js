@@ -1,3 +1,6 @@
+"use strict";
+
+///////////////////////////////////////
 // FIRST SWIPER
 
 const swiper1 = new Swiper(".index--hero--marks--col-2 .swiper", {
@@ -13,23 +16,29 @@ const swiper1 = new Swiper(".index--hero--marks--col-2 .swiper", {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 3,
+      spaceBetween: 70,
+    },
+    768: {
+      slidesPerView: 6,
       spaceBetween: 20,
     },
     // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 90,
     },
     // when window width is >= 640px
-    640: {
+    1440: {
       slidesPerView: 6,
       spaceBetween: 90,
     },
   },
 });
 
+///////////////////////////////////////
 // SECOND SWIPER
+
 const swiper2 = new Swiper(".index--second--section .swiper", {
   // Optional parameters
   loop: true,
@@ -40,3 +49,6 @@ const swiper2 = new Swiper(".index--second--section .swiper", {
     clickable: true,
   },
 });
+
+///////////////////////////////////////
+// STICKY NAV
