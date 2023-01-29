@@ -12,6 +12,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="/css/index.css" />
   </head>
@@ -32,9 +37,18 @@
         </div>
         <ul class="nav--col--2">
           <li><a class="active" href="#">Početna</a></li>
-          <li><a href="#">Naše Usluge</a></li>
+          <li class="dropdown">
+            <a id="dropdown--el" href="#"
+              >Naše Usluge <i class="fa fa-caret-down"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li><a href="#">Chip Tuning</a></li>
+              <li><a href="#">Ostale Usluge</a></li>
+            </ul>
+          </li>
           <li><a href="#">Čime Radimo</a></li>
-          <li><a href="#">O Nama</a></li>
+          <li><a href="/o-nama.html">O Nama</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
       </div>

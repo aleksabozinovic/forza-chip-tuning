@@ -1,12 +1,14 @@
 "use strict";
 
-///////////////////
-// STICKY NAV
-
 let navbar = document.querySelector("nav");
 let navPos = navbar.getBoundingClientRect().top;
 let hamburger = document.querySelector("#hamburger");
 let overlay = document.querySelector(".overlay");
+let dropdown = document.querySelector(".dropdown");
+let dropdownMenu = document.querySelector(".dropdown-menu");
+
+///////////////////
+// STICKY NAV
 
 window.addEventListener("scroll", (e) => {
   let scrollPos = window.scrollY;
@@ -23,6 +25,14 @@ hamburger.addEventListener("click", (el) => {
   document.querySelector(".nav--col--2").classList.toggle("active");
   if (!navbar.classList.contains("active")) navbar.classList.toggle("active");
   document.querySelector("body").classList.toggle("stop-scroll");
-  console.log("aki");
   overlay.classList.toggle("active");
 });
+
+///////////////////
+// DropDown
+
+// dropdown.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   dropdownMenu.classList.toggle("active");
+//   e.target.closest("a").classList.toggle("active");
+// });
