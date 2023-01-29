@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naše Usluge</title>
+    <title>Ostale Usluge</title>
     <link rel="icon" type="image/png" href="/logoIcon.png" sizes="16x16" />
 
     <!-- CSS -->
@@ -17,7 +17,6 @@
   <body>
     <div class="overlay"></div>
     <!-- NAV -->
-
     <nav>
       <div class="container">
         <div class="nav--col--1">
@@ -31,8 +30,19 @@
         </div>
         <ul class="nav--col--2">
           <li><a href="/index.html">Početna</a></li>
-          <li><a class="active" href="#">Naše Usluge</a></li>
-          <li><a href="/cime-radimo">Čime Radimo</a></li>
+          <li class="dropdown">
+            <a class="active" id="dropdown--el" href="#"
+              >Naše Usluge <i class="fa fa-caret-down"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a id="dropdown--el--1" href="/chip-tuning.html">Chip Tuning</a>
+              </li>
+              <li><a id="dropdown--el--2" href="#">Ostale Usluge</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Čime Radimo</a></li>
           <li><a href="/o-nama.html">O Nama</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
@@ -41,7 +51,7 @@
 
     <!-- FIRST SECTION -->
     <div class="ukratko--first--section">
-      <h1>Ukratko O Chip Tuningu</h1>
+      <h1>Ostale Usluge</h1>
 
       <div class="container">
         <div class="ukratko--first--sec--col-1"></div>

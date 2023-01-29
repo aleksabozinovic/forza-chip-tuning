@@ -139,11 +139,10 @@ nav.active {
 .dropdown-menu li {
   margin-bottom: 10px;
 }
-.dropdown:focus-within .dropdown-menu {
-  opacity: 1;
-  pointer-events: all;
-  display: block;
+.dropdown-menu a {
+  z-index: 11;
 }
+
 /* FOOTER */
 
 footer {

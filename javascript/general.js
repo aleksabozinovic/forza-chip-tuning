@@ -6,7 +6,9 @@ let hamburger = document.querySelector("#hamburger");
 let overlay = document.querySelector(".overlay");
 let dropdown = document.querySelector(".dropdown");
 let dropdownMenu = document.querySelector(".dropdown-menu");
-
+let dropdownEl = document.querySelector("#dropdown--el");
+let dropdownEl_1 = document.querySelector("#dropdown--el--1");
+let dropdownEl_2 = document.querySelector("#dropdown--el--2");
 ///////////////////
 // STICKY NAV
 
@@ -31,8 +33,25 @@ hamburger.addEventListener("click", (el) => {
 ///////////////////
 // DropDown
 
-// dropdown.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   dropdownMenu.classList.toggle("active");
-//   e.target.closest("a").classList.toggle("active");
-// });
+dropdown.addEventListener("click", (e) => {
+  e.preventDefault();
+  dropdownMenu.classList.toggle("active");
+  dropdownEl.classList.add("active");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target == dropdownMenu) return;
+
+  if (e.target != dropdownMenu && e.target != dropdownEl) {
+    dropdownMenu.classList.remove("active");
+    dropdownEl.classList.remove("active");
+  }
+});
+
+dropdownEl_1.addEventListener("click", (e) => {
+  location.href = "/chip-tuning.html";
+});
+
+dropdownEl_2.addEventListener("click", (e) => {
+  location.href = "/ostale-usluge.html";
+});
