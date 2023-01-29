@@ -109,6 +109,9 @@ nav .container {
 .nav--col--2 li a:hover::after {
   width: 100%;
 }
+.nav--col--2 li:last-child {
+  margin-right: 0;
+}
 
 nav.active {
   background: #151515;
@@ -137,4 +140,156 @@ footer {
 
 #footer__div p {
   margin: 1rem 0;
+}
+
+/* HAMBURGER */
+
+#hamburger {
+  display: none;
+  width: 50px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2),
+#hamburger span:nth-child(3) {
+  top: 14px;
+}
+
+#hamburger span:nth-child(4) {
+  top: 28px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.overlay.active {
+  display: block;
+}
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(15, 15, 15, 0.5);
+  z-index: 90;
+}
+
+@media screen and (max-width: 900px) {
+  .nav--col--2 li {
+    margin-right: 20px;
+  }
+  .nav--col--2 li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+  .nav--col--2 {
+    flex-direction: column;
+    position: absolute;
+    top: -100%;
+    background: var(--background--color);
+    width: 100%;
+    left: 0;
+    height: 0;
+    padding: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+  }
+  .nav--col--2.active {
+    pointer-events: all;
+    opacity: 1;
+    top: 100%;
+    height: auto;
+  }
+  nav.active {
+    background: var(--background--color);
+  }
+  body.stop-scroll {
+    overflow-y: hidden;
+  }
+  .nav--col--2 li {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .nav--col--2 li a {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #footer__div,
+  .copyright {
+    padding: 32px 16px;
+  }
+  #footer__div img {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #footer__div,
+  .copyright {
+    padding: 32px 10px;
+  }
 }
