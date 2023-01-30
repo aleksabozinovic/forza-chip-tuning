@@ -1,5 +1,7 @@
 @import "/css/general.css";
 
+/* //////////////////// */
+/* FIRST SECTION */
 .ukratko--first--section {
   height: 100vh;
   padding: 120px 0;
@@ -8,6 +10,7 @@
 .ukratko--first--section h1 {
   text-align: center;
   margin-bottom: 4rem;
+  font-size: 52px;
 }
 
 .ukratko--first--section .container {
@@ -30,5 +33,102 @@
 }
 .ukratko--first--sec--col-1 p {
   margin-bottom: 2rem;
+  font-size: 22px;
   width: 100%;
+}
+
+/* //////////////////// */
+/* SECOND SECTION */
+
+.ukratko--second--section {
+  background: var(--secondary--background);
+  padding: 120px 0;
+}
+
+.ukratko--second--section #ukratko__p {
+  width: 80%;
+  font-size: 22px;
+  margin: auto;
+  text-align: center;
+}
+
+.ukratko--second--section iframe {
+  margin-top: 6rem;
+  width: 100%;
+  height: 600px;
+}
+
+/* ? IZABRATI MARKU AUTOMOBILA */
+.pronadjite__vas__auto h2 {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+}
+.pretraga__form {
+  display: flex;
+  flex-direction: column;
+}
+.pretraga__div--1 {
+  display: flex;
+  justify-content: space-between;
+}
+.option__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.option__div label {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  color: #fff;
+}
+.option__div select {
+  width: 60%;
+  border: 0;
+  padding: 8px 10px;
+  font-size: 16px;
+  outline: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.pretraga__div {
+  margin-top: 3rem;
+  text-align: center;
+}
+.pretraga__div a {
+  background: var(--p--color);
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px 60px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.pretraga__div a:hover {
+  background: #fff;
+}
+
+.ne__pronalazite__model--div {
+  text-align: center;
+  margin-top: 6rem;
+}
+.ne__pronalazite__model--div h4 {
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+.ne__pronalazite__model--div p {
+  width: 60%;
+  margin: auto;
+  font-size: 22px;
+}
+
+/* ////////////////////////// */
+/* ! OSTALE USLUGE ! */
+
+.ostale--usluge--section {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

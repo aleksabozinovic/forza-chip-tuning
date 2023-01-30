@@ -83,15 +83,87 @@
     <!-- SECOND SECTION -->
 
     <section class="ukratko--second--section">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit
-        molestiae ipsum dolorem amet. Distinctio minus cumque saepe corporis
-        eligendi quaerat repudiandae placeat, nostrum, fugit sapiente iusto
-        nihil nulla animi. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Minus sit molestiae ipsum dolorem amet. Distinctio minus cumque
-        saepe corporis eligendi quaerat repudiandae placeat, nostrum, fugit
-        sapiente iusto nihil nulla animi.
-      </p>
+      <div class="container">
+        <p id="ukratko__p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit
+          molestiae ipsum dolorem amet. Distinctio minus cumque saepe corporis
+          eligendi quaerat repudiandae placeat, nostrum, fugit sapiente iusto
+          nihil nulla animi. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Minus sit molestiae ipsum dolorem amet. Distinctio minus cumque
+          saepe corporis eligendi quaerat repudiandae placeat, nostrum, fugit
+          sapiente iusto nihil nulla animi.
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/wISHRpsMg5E"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="pronadjite__vas__auto">
+        <div class="container">
+          <h2>Pronadjite Vaš Auto</h2>
+
+          <form class="pretraga__form">
+            <div class="pretraga__div--1">
+              <!-- IZABRATI MARKU AUTOMOBILA -->
+              <div class="option__div marka">
+                <label for="marka">Marka</label>
+                <select name="marka" id="marka">
+                  <option disabled selected>Izaberite Marku Vozila</option>
+                  <option value="audi">Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="fiat">Fiat</option>
+                </select>
+              </div>
+
+              <!-- IZABRATI MODEL AUTOMOBILA -->
+              <div class="option__div model">
+                <label for="model">Model</label>
+                <select disabled name="model" id="model">
+                  <option disabled selected>Izaberite Model Vozila</option>
+                  <!-- <option value="fiat">Fiat</option> -->
+                </select>
+              </div>
+
+              <!-- IZABRATI GORIVO AUTOMOBILA -->
+              <div class="option__div gorivo">
+                <label for="gorivo">Gorivo</label>
+                <select disabled name="gorivo" id="gorivo">
+                  <option disabled selected>Izaberite Gorivo Vozila</option>
+                  <option value="dizel">Dizel</option>
+                  <option value="benzin">Benzin</option>
+                </select>
+              </div>
+
+              <!-- IZABRATI MOTOR AUTOMOBILA -->
+              <div class="option__div motor">
+                <label for="motor">Motor</label>
+                <select disabled name="motor" id="motor">
+                  <option disabled selected>Izaberite Motor Vozila</option>
+                  <!-- <option value="fiat">Fiat</option> -->
+                </select>
+              </div>
+            </div>
+
+            <div class="pretraga__div">
+              <a href="#" class="pretrazi__dugme">Pretraži</a>
+            </div>
+          </form>
+
+          <div class="ne__pronalazite__model--div">
+            <h4>Ne možete da pronadjete model vašeg automobila?</h4>
+            <p>
+              Stalno dodajemo nove marke i modele automobila. Ako se vaš ne
+              pojavljuje u listi, možete nas kontaktirati putem poruke ili putem
+              nase email adrese. Mi cemo vam odgovoriti u najkracem mogucem roku
+              i dati potrebne informacije o vasem automobilu.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
