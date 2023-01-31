@@ -59,6 +59,10 @@ li {
   margin: auto;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* NAV BAR */
 
 nav {
