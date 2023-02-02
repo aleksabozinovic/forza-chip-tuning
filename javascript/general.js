@@ -57,6 +57,6 @@ dropdownEl_2.addEventListener("click", (e) => {
   location.href = "/ostale-usluge.html";
 });
 
-saznajteViseDugme.addEventListener("click", (e) => {
+saznajteViseDugme?.addEventListener("click", (e) => {
   location.href = "/chip-tuning.html";
 });
