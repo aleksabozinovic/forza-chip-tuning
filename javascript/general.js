@@ -9,6 +9,7 @@ let dropdownMenu = document.querySelector(".dropdown-menu");
 let dropdownEl = document.querySelector("#dropdown--el");
 let dropdownEl_1 = document.querySelector("#dropdown--el--1");
 let dropdownEl_2 = document.querySelector("#dropdown--el--2");
+let saznajteViseDugme = document.querySelector("#saznaj__vise--div");
 ///////////////////
 // STICKY NAV
 
@@ -54,4 +55,8 @@ dropdownEl_1.addEventListener("click", (e) => {
 
 dropdownEl_2.addEventListener("click", (e) => {
   location.href = "/ostale-usluge.html";
+});
+
+saznajteViseDugme.addEventListener("click", (e) => {
+  location.href = "/chip-tuning.html";
 });
