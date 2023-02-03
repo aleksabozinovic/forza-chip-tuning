@@ -151,6 +151,8 @@ nav.active {
   opacity: 1;
   pointer-events: all;
   display: block;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .dropdown-menu li {
   margin-bottom: 10px;
@@ -303,6 +305,9 @@ footer {
     opacity: 1;
     top: 100%;
     height: auto;
+  }
+  .dropdown.open {
+    margin-bottom: 6rem;
   }
   nav.active {
     background: var(--background--color);

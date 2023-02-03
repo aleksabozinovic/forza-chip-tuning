@@ -36,6 +36,7 @@ hamburger.addEventListener("click", (el) => {
 
 dropdown.addEventListener("click", (e) => {
   e.preventDefault();
+  dropdown.classList.toggle("open");
   dropdownMenu.classList.toggle("active");
   dropdownEl.classList.add("active");
 });
@@ -46,6 +47,7 @@ window.addEventListener("click", (e) => {
   if (e.target != dropdownMenu && e.target != dropdownEl) {
     dropdownMenu.classList.remove("active");
     dropdownEl.classList.remove("active");
+    dropdown.classList.remove("open");
   }
 });
 

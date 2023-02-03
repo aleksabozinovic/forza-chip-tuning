@@ -3,7 +3,6 @@
 /* //////////////////// */
 /* FIRST SECTION */
 .ukratko--first--section {
-  height: 100vh;
   padding: 120px 0;
 }
 
@@ -65,16 +64,20 @@
 }
 .pretraga__form {
   display: flex;
-  flex-direction: column;
-}
-.pretraga__div--1 {
-  display: flex;
   justify-content: space-between;
 }
+
 .option__div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+.pretraga__div--1,
+.pretraga__div--2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 }
 .option__div label {
@@ -83,7 +86,6 @@
   color: #fff;
 }
 .option__div select {
-  width: 60%;
   border: 0;
   padding: 8px 10px;
   font-size: 16px;
@@ -226,4 +228,189 @@
 .index--fifth--section--bg a:hover::after {
   width: 100%;
   border-radius: 50rem;
+}
+
+@media screen and (max-width: 1620px) {
+  .card {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1490px) {
+  .card {
+    width: 480px;
+  }
+  .ostale--usluge--sec--col-2 {
+    padding-left: 3rem;
+  }
+  .ostale--usluge--sec--col-1 img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .card {
+    width: 420px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .ukratko--first--sec--col-1 p {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .pretraga__form {
+    flex-direction: column;
+  }
+  .option__div {
+    margin-bottom: 2rem;
+  }
+  .ukratko--first--sec--col-2 img {
+    width: 85%;
+  }
+  .ostale--usluge--section {
+    padding-bottom: 80px;
+  }
+  .ostale--usluge--karte {
+    padding: 80px 0;
+  }
+  .ostale--usluge--section .container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .ostale--usluge--sec--col-2 {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .ostale--usluge--sec--col-2 p {
+    width: 80%;
+    margin: auto;
+  }
+  .ostale--usluge--section #title {
+    font-size: 54px;
+  }
+  .ostale--usluge--sec--col-1 img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 150px;
+  }
+
+  .cards-row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .ukratko--first--section .container {
+    flex-direction: column;
+  }
+  .ukratko--first--sec--col-2 img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .ukratko--first--sec--col-1 p {
+    text-align: center;
+  }
+  .ukratko--first--section h1 {
+    font-size: 46px;
+    margin-bottom: 2rem;
+  }
+  .ne__pronalazite__model--div p {
+    width: 100%;
+  }
+  .ukratko--first--section {
+    padding-bottom: 80px;
+  }
+  .ukratko--second--section {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #first__container {
+    width: 100%;
+  }
+  .card .title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pretraga__div--1,
+  .pretraga__div--2 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #first__container {
+    width: 90%;
+  }
+  .ukratko--first--section h1 {
+    font-size: 36px;
+  }
+  .pronadjite__vas__auto h2 {
+    font-size: 30px;
+    margin: 2rem 0;
+  }
+  .ukratko--second--section #ukratko__p {
+    width: 90%;
+  }
+  .ukratko--second--section iframe {
+    margin-top: 3rem;
+  }
+  .ukratko--second--section,
+  .ostale--usluge--karte {
+    padding: 40px 0;
+  }
+  .container {
+    width: 85%;
+  }
+  .ukratko--first--section,
+  .ostale--usluge--section {
+    padding-bottom: 40px;
+  }
+  .ostale--usluge--sec--col-2 p {
+    width: 100%;
+  }
+  .ostale--usluge--section #title {
+    font-size: 36px;
+  }
+  .ostale--usluge--sec--col-2 h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ukratko--first--section h1,
+  .ostale--usluge--section #title {
+    font-size: 30px;
+  }
+  p,
+  .ukratko--second--section #ukratko__p,
+  .ne__pronalazite__model--div p {
+    font-size: 20px;
+  }
+  .ne__pronalazite__model--div h4 {
+    font-size: 24px;
+  }
+  .pronadjite__vas__auto h2,
+  .ostale--usluge--sec--col-2 h2 {
+    font-size: 28px;
+  }
+  .card {
+    height: 220px;
+  }
 }
