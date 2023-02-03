@@ -134,14 +134,14 @@
     font-size: 22px;
     margin-bottom: 1rem;
   }
-}
-
-@media screen and (max-width: 375px) {
   .subtitle {
     font-size: 28px;
     width: 100%;
     margin-bottom: 2rem;
   }
+}
+
+@media screen and (max-width: 375px) {
   .cime--radimo--second--section--col-1 p {
     font-size: 18px;
   }
