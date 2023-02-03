@@ -118,7 +118,7 @@
   .title {
     font-size: 36px;
   }
-  .images img:nth-child(2) {
+  .images img:nth-child(3) {
     display: none;
   }
   .images img {
@@ -132,10 +132,20 @@
   }
   .cime--radimo--second--section--col-1 p {
     font-size: 22px;
-    margin: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
+@media screen and (max-width: 375px) {
+  .subtitle {
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .cime--radimo--second--section--col-1 p {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 320px) {
   .title {
     font-size: 30px;
