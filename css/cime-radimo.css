@@ -125,10 +125,10 @@
     width: 100%;
   }
   .cime--radimo--second--section--col-2 img {
-    width: 95%;
+    width: 90%;
   }
   .description {
-    font-size: 24px;
+    font-size: 22px;
   }
   .cime--radimo--second--section--col-1 p {
     font-size: 22px;
@@ -142,10 +142,11 @@
   .cime--radimo--second--section--col-1 p {
     font-size: 18px;
   }
+  .cime--radimo--second--section {
+    padding: 40px 0;
+  }
 }
 
-@media screen and (max-width: 375px) {
-}
 @media screen and (max-width: 320px) {
   .title {
     font-size: 30px;

@@ -367,6 +367,7 @@
   }
   .ukratko--second--section #ukratko__p {
     width: 90%;
+    font-size: 20px;
   }
   .ukratko--second--section iframe {
     margin-top: 3rem;
@@ -390,6 +391,9 @@
   }
   .ostale--usluge--sec--col-2 h2 {
     font-size: 30px;
+  }
+  .ne__pronalazite__model--div p {
+    font-size: 20px;
   }
 }
 
