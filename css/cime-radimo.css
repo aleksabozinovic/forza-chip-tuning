@@ -93,6 +93,9 @@
   .title {
     font-size: 46px;
   }
+  .cime--radimo--first--section {
+    background-image: url("/images/cime-radimo-hero-768.jpg");
+  }
   .subtitle {
     font-size: 32px;
     width: 80%;
@@ -144,6 +147,9 @@
   }
   .cime--radimo--second--section {
     padding: 40px 0;
+  }
+  .cime--radimo--first--section {
+    background-image: url("/images/cime-radimo-hero-425.jpg");
   }
 }
 
