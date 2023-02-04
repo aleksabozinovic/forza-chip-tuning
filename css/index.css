@@ -6,6 +6,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .index--hero--background {
@@ -79,7 +80,9 @@
   width: 100%;
   height: 100%;
 }
-
+.swiper-wrapper {
+  align-items: center;
+}
 .index--hero--marks--col-2 .swiper-slide {
   object-fit: contain;
 }
