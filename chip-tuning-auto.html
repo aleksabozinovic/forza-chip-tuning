@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chip Tuning Kola</title>
+    <link rel="icon" type="image/png" href="/logoIcon.png" sizes="16x16" />
+
+    <!-- FOnt Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/auto.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- NAV -->
+
+    <nav>
+      <div class="container">
+        <div class="nav--col--1">
+          <img loading="lazy" src="/images/logo.svg" alt="Logo" />
+        </div>
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav--col--2">
+          <li><a href="/index.html">Početna</a></li>
+          <li class="dropdown">
+            <a class="active" id="dropdown--el" href="#"
+              >Naše Usluge <i class="fa fa-caret-down"></i
+            ></a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a id="dropdown--el--1" href="/chip-tuning.html">Chip Tuning</a>
+              </li>
+              <li>
+                <a id="dropdown--el--2" href="/ostale-usluge.html"
+                  >Ostale Usluge</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="/cime-radimo.html">Čime Radimo</a></li>
+          <!-- <li><a href="/o-nama.html">O Nama</a></li> -->
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="auto--first--section">
+      <div class="auto--first--section--bg">
+        <h1>Opel Corsa D</h1>
+      </div>
+    </section>
+
+    <section class="auto--second--section">
+      <div class="container">
+        <form class="pretraga__form">
+          <div class="pretraga__div--1">
+            <!-- IZABRATI MARKU AUTOMOBILA -->
+            <div class="option__div marka">
+              <label for="marka">Marka</label>
+              <select name="marka" id="marka">
+                <option disabled selected>Izaberite Marku Vozila</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="fiat">Fiat</option>
+              </select>
+            </div>
+
+            <!-- IZABRATI MODEL AUTOMOBILA -->
+            <div class="option__div model">
+              <label for="model">Model</label>
+              <select disabled name="model" id="model">
+                <option disabled selected>Izaberite Model Vozila</option>
+                <!-- <option value="fiat">Fiat</option> -->
+              </select>
+            </div>
+          </div>
+          <div class="pretraga__div--2">
+            <!-- IZABRATI GORIVO AUTOMOBILA -->
+            <div class="option__div gorivo">
+              <label for="gorivo">Gorivo</label>
+              <select disabled name="gorivo" id="gorivo">
+                <option disabled selected>Izaberite Gorivo Vozila</option>
+                <option value="dizel">Dizel</option>
+                <option value="benzin">Benzin</option>
+              </select>
+            </div>
+
+            <!-- IZABRATI MOTOR AUTOMOBILA -->
+            <div class="option__div motor">
+              <label for="motor">Motor</label>
+              <select disabled name="motor" id="motor">
+                <option disabled selected>Izaberite Motor Vozila</option>
+                <!-- <option value="fiat">Fiat</option> -->
+              </select>
+            </div>
+          </div>
+        </form>
+        <div class="pretraga__div">
+          <a href="#" class="pretrazi__dugme">Pretraži</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="auto--third--section">
+      <div class="container">
+        <!-- FIRST COL -->
+
+        <div class="auto--third--col-1">
+          <p>Model: <span class="model--auta">Opel Corsa D</span></p>
+          <p>Godiste: <span class="godiste--auta">2023</span></p>
+          <p>Gorivo: <span class="gorivo--auta">Dizel</span></p>
+          <p>Motor: <span class="motor--auta">1.3 CDTI 90HP</span></p>
+        </div>
+
+        <!-- SECOND COL -->
+
+        <div class="auto--third--col-2">
+          <div class="row fabricki--deklarisano">
+            <p class="title">Fabrički Deklarisano</p>
+            <p class="description fabricki--hp">90 HP</p>
+            <!-- <div class="line"></div> -->
+            <p class="description fabricki--nm">200 Nm</p>
+          </div>
+          <div class="row stage--1">
+            <p class="title">Forza Chip Tuning - Stage 1</p>
+            <p class="description stage--hp">105 HP</p>
+            <p class="description stage--nm">245 Nm</p>
+          </div>
+          <div class="row sta--dobijate">
+            <p class="title">Dobijate</p>
+            <p class="description dobijate--hp">15 HP</p>
+            <p class="description dobijate--nm">45 Nm</p>
+          </div>
+        </div>
+      </div>
+      <div class="dodatne--informacije">
+        <div class="container">
+          <p>
+            Informacije mogu biti delimično netačne. Ukoliko želite precizne
+            podatke o dobitku, vremenu potrebnom da se uradi i ceni pošaljite
+            upit za vozilo preko linka ispod.
+          </p>
+          <a href="/kontakt.html">Postavite Pitanje</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="footer__div">
+        <h4>Forza Chip Tuning</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.repudiandae!
+        </p>
+
+        <a href="https://www.instagram.com/forza.chiptuning/"
+          ><img loading="lazy" src="/icons/instagram.svg" alt="instagra,"
+        /></a>
+      </div>
+      <div class="line"></div>
+
+      <p class="copyright">
+        ©2023 Forza Chip Tuning. Designed and Developed by
+        <a target="_blank" href="https://www.aleksabozinovic.com/"
+          >Aleksa Bozinovic</a
+        >
+      </p>
+    </footer>
+  </body>
+
+  <!-- JS -->
+  <script src="/javascript/general.js"></script>
+</html>
