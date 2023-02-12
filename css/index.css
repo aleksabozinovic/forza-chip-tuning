@@ -75,6 +75,10 @@
 }
 .index--hero--marks--col-2 {
   width: 72%;
+  display: flex;
+}
+.index--hero--marks--col-2 img {
+  width: 110px;
 }
 .index--hero--marks--col-2 .swiper {
   width: 100%;
@@ -252,6 +256,8 @@
   width: 100%;
   border-radius: 50rem;
 }
+/* ///////////////////////// */
+/* ! PAGE TRANSITION ! */
 
 /* ///////////////////////// */
 /* MEDIA QUERY RESPONSIVE */

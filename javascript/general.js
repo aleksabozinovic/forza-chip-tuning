@@ -62,3 +62,46 @@ dropdownEl_2.addEventListener("click", (e) => {
 saznajteViseDugme?.addEventListener("click", (e) => {
   location.href = "/chip-tuning.html";
 });
+
+// PAGE TRANSITION
+
+// const swup = new Swup({
+//   plugins: [
+//     new SwupHeadPlugin({
+//       persistAssets: true,
+//     }),
+//   ],
+// });
+
+// PAGE SCROLL ANIMATIONS
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add("show");
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+const blur = document.querySelectorAll(".blur");
+
+//
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("hidden");
+  entry.target.classList.add("show");
+
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+hiddenElements.forEach(function (section) {
+  sectionObserver.observe(section);
+});
