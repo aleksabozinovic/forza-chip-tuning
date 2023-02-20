@@ -302,7 +302,6 @@ html.is-animating .transition-fade {
   opacity: 1;
   filter: blur(0);
   transition: all 1s ease;
-
   transform: translateY(00px);
 }
 
