@@ -94,23 +94,35 @@
             action="https://formsubmit.co/aleksabozinovic722@gmail.com"
             method="POST"
           >
+            <input type="hidden" name="_captcha" value="false" />
+
             <!-- ////////////// -->
 
             <div class="user-box">
-              <input placeholder="Ime" type="text" class="name-input" />
+              <input
+                name="name"
+                placeholder="Ime"
+                type="text"
+                class="name-input"
+              />
             </div>
 
             <!-- ////////////// -->
 
             <div class="user-box">
-              <input placeholder="Email" type="email" class="email-input" />
+              <input
+                name="email"
+                placeholder="Email"
+                type="email"
+                class="email-input"
+              />
             </div>
 
             <!-- ////////////// -->
 
             <div class="user-box">
               <textarea
-                name=""
+                name="message"
                 placeholder="Vaše pitanje"
                 id=""
                 cols="30"
