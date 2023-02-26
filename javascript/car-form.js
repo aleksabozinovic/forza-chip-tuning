@@ -9,11 +9,17 @@ markaSelector.addEventListener("change", (markEl) => {
   modelSelector.disabled = false;
 
   if (markElement === "abarth") {
-    let abarthModeli = {
-        "value"
-    }
-    newOption.innerHTML = `<option value="fiat">Fiat</option>`;
+    let abarthModeli = [
+      "124 Spider - 2016",
+      "500 - 2007",
+      "500 - 2015",
+      "Grande Punto - 2005",
+    ];
+
+    abarthModeli.map((el) => {
+      console.log(el);
+      newOption.innerHTML = `<option value="fiat">${el}</option>`;
+    });
     modelSelector.appendChild(newOption);
   }
-
 });
