@@ -1,0 +1,15 @@
+{
+  "abarth": {
+    "model": {
+      "500": {
+        "godiste": {
+          "2007": {
+            "tip1": "1.4 Tjet 135hp",
+            "tip2": "1.4 Tjet 140hp",
+            "tip3": "1.4 Tjet 160hp 595"
+          }
+        }
+      }
+    }
+  }
+}
