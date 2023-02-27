@@ -108,6 +108,9 @@
   transition: all 0.5s ease;
   pointer-events: none;
 }
+.pretraga__div a.active {
+  pointer-events: all;
+}
 .pretraga__div a:hover {
   background: #fff;
 }

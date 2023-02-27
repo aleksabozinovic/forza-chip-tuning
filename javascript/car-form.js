@@ -6,9 +6,14 @@ const modelSelector = document.querySelector(".model select");
 const modelSelectorOption = document.querySelectorAll(".model select option");
 const gorivoSelector = document.querySelector(".gorivo select");
 const motorSelector = document.querySelector(".motor select");
+const pretragaDugme = document.querySelector(".pretraga__div a");
 const newOption = document.createElement("option");
 
 markaSelector.addEventListener("change", (markEl) => {
+  gorivoSelector.innerHTML = `<option disabled selected>Izaberite Motor Vozila</option>`;
+  motorSelector.innerHTML = `<option disabled selected>Izaberite Motor Vozila</option>`;
+  modelSelector.innerHTML = `<option disabled selected>Izaberite Model Vozila</option>`;
+
   const markElement = markEl.target.value;
   modelSelector.disabled = false;
 
@@ -21,6 +26,8 @@ markaSelector.addEventListener("change", (markEl) => {
     });
     // console.log(modelSelector.children);
     modelSelector.addEventListener("change", (modelEl) => {
+      gorivoSelector.innerHTML = `<option disabled selected>Izaberite Motor Vozila</option>`;
+      motorSelector.innerHTML = `<option disabled selected>Izaberite Motor Vozila</option>`;
       const modelElement = modelEl.target.value;
 
       gorivoSelector.disabled = false;
@@ -49,6 +56,9 @@ markaSelector.addEventListener("change", (markEl) => {
               let htmlMotor = `<option value="${el}">${el}</option>`;
               motorSelector.insertAdjacentHTML("beforeend", htmlMotor);
             });
+            motorSelector.querySelectorAll("option").forEach((element) => {
+              console.log(element);
+            });
           }
 
           if (modelElement === "500 - 2015") {
@@ -66,6 +76,18 @@ markaSelector.addEventListener("change", (markEl) => {
               let htmlMotor = `<option value="${el}">${el}</option>`;
               motorSelector.insertAdjacentHTML("beforeend", htmlMotor);
             });
+            // pretragaDugme.classList.add("active");
+          }
+
+          if (modelElement === "Grande Punto - 2005") {
+            motorSelector.innerHTML = `<option selected>Izaberite Motor Vozila</option>`;
+
+            const abarthMotor = ["1.4 Tjet 155hp", "1.4 Tjet 180hp Supersport"];
+            abarthMotor.forEach((el) => {
+              let htmlMotor = `<option value="${el}">${el}</option>`;
+              motorSelector.insertAdjacentHTML("beforeend", htmlMotor);
+            });
+            // pretragaDugme.classList.add("active");
           }
         }
       });
