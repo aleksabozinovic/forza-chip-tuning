@@ -7,8 +7,17 @@ const modelSelectorOption = document.querySelectorAll(".model select option");
 const gorivoSelector = document.querySelector(".gorivo select");
 const motorSelector = document.querySelector(".motor select");
 const pretragaDugme = document.querySelector(".pretraga__div a");
+const autoFirstName = document.querySelector(".auto--first--section--bg");
 const newOption = document.createElement("option");
 
+const showName = async function () {
+  try {
+    autoFirstName.innerHTML = `<h1>Abarth 500 / 1.4 Tjet 135hp</h1>`;
+    console.log("eee");
+  } catch (err) {
+    console.log(err);
+  }
+};
 markaSelector.addEventListener("change", (markEl) => {
   gorivoSelector.innerHTML = `<option disabled selected>Izaberite Motor Vozila</option>`;
   motorSelector.innerHTML = `<option disabled selected>Izaberite Motor Vozila</option>`;
@@ -56,9 +65,6 @@ markaSelector.addEventListener("change", (markEl) => {
               let htmlMotor = `<option value="${el}">${el}</option>`;
               motorSelector.insertAdjacentHTML("beforeend", htmlMotor);
             });
-            motorSelector.querySelectorAll("option").forEach((element) => {
-              console.log(element);
-            });
           }
 
           if (modelElement === "500 - 2015") {
@@ -89,6 +95,25 @@ markaSelector.addEventListener("change", (markEl) => {
             });
             // pretragaDugme.classList.add("active");
           }
+
+          // motorSelector.querySelectorAll("option").forEach((element) => {
+          //   console.log(element.value);
+          // });
+        }
+      });
+      motorSelector.addEventListener("change", (motorEl) => {
+        const motorElement = motorEl.target.value;
+        if (motorElement === "1.4 Tjet 135hp") {
+          pretragaDugme.classList.add("active");
+
+          pretragaDugme.addEventListener("click", (e) => {
+            // e.preventDefault();
+            // location.href = "/chip-tuning-auto.html";
+            // showName();
+            window.onload(() => {
+              console.log("load");
+            });
+          });
         }
       });
     });
