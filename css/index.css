@@ -313,6 +313,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .index-third-sec-col-1 {
+    padding-right: 0;
+  }
   h1 {
     font-size: 44px;
   }
@@ -371,12 +374,7 @@
   h3 {
     font-size: 24px;
   }
-  .index--second--section #second--section__div {
-    text-align: center;
-  }
-  .index-third-sec-col-1 {
-    text-align: center;
-  }
+
   .index--fifth--section--bg a {
     font-size: 20px;
   }

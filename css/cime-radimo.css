@@ -118,6 +118,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .cime--radimo--second--section .container {
+    text-align: left;
+  }
   .title {
     font-size: 36px;
   }

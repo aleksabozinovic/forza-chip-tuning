@@ -155,8 +155,8 @@
   padding-left: 10rem;
 }
 
-.ostale--usluge--sec--col-2 h2 {
-  margin-bottom: 1rem;
+.ostale--usluge--sec--col-2 p {
+  font-size: 24px;
 }
 
 /* SECOND SECTION */
@@ -359,6 +359,15 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .ostale--usluge--sec--col-2 p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .ukratko--first--sec--col-1 p,
+  .ukratko--second--section #ukratko__p {
+    text-align: left;
+  }
   #first__container {
     width: 90%;
   }

@@ -95,8 +95,14 @@ textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .kontakt-col-1 {
+    align-items: flex-start;
+  }
   .hero-kontakt {
     padding: 100px 0;
+  }
+  .box {
+    text-align: left;
   }
   .hero-kontakt h2 {
     margin-top: 3rem;
